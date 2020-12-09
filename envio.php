@@ -189,7 +189,7 @@ if(isset($_REQUEST['radio_it-Amazon']))
 <div class="cuerpos">
 <img src="reviews.jpg" alt="Could you leave us a review?, please???? ...">
   <div class="form-controlq">
-      <a href="https://www.tripadvisor.com/UserReviewEdit-g294314-d2469804-Valencia_Travel_Day_Tours-Cusco_Cusco_Region.html">YES,Leave a Review in T.A</a>
+      <a href="url_trip_advisor">YES,Leave a Review in T.A</a>
       <a href="index.php">NO, but thank you</a>
   </div>
 
