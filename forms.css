@@ -1,0 +1,347 @@
+
+body {
+  font-family: 'Alegreya', serif;
+    max-width: 1440px;
+    background-color: #333;
+    margin: auto;
+    background-image: url(https://www.valenciatravelcusco.com/admin/images/fondo.png);
+}
+.cabezal
+{
+  position: relative;
+  height: 150px;
+  background-image: url(cabezal.jpg);
+  width: 50%;
+  margin: auto;
+  background-size: 100% 100%;
+}
+
+.logo
+{
+  position: absolute;
+  background-image: url(logoBN.png);
+  height: 150px;
+  width: 185px;
+  background-size: 100% 100%;
+}
+.texto_intro
+{
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:justify;
+}
+.texto_intro h1, .form2 h1
+{
+  font-size: 20px;
+  text-align: center;
+}
+
+form, .cuerpos{
+
+    display: block;
+    background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .cuerpos
+  {text-align: center;}
+  .cuerpos img
+  {
+    width: auto;
+  }
+  .cuerpos p
+  {
+    margin:0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+
+  }
+input[type="text"],input[type="email"],input[type="date"]
+  {
+    border-radius: 3px;
+    margin-top:6px;
+    height:34px;
+    width: 80%;
+  }
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+textarea.form-control {
+    height: auto;
+}
+
+.form-control{
+  	display: flex;
+    flex-direction: column;
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      margin-top: 20px;
+  }
+  .form-controlq{
+    	display: block;
+      flex-direction: column;
+        padding: 6px 12px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+  .form-controlq a
+  {
+    background-color: #0095ce;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+input[type="submit"]
+{
+  width: 30%;
+  margin: 15 auto;
+  display: block;
+  height: 45px;
+  background-color: #0095ce;
+  border: none;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.boton
+{
+  padding-bottom: 10px;
+}
+/*---------------------------------------*/
+.form2
+{
+  padding:20 20;
+  box-sizing: border-box;
+}
+/* Hide the browser's default checkbox */
+.container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container2 input{
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 10;
+  width: 10;
+}
+
+/*checkbok*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container2 {
+  display: inline-flex;
+   position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+}
+
+.container2 label
+{
+margin-left: 25px;
+margin-right: 25px;
+}
+.ciudad_itinerario
+{ text-decoration: underline;
+  margin-right: 30px;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* Create a custom radiobutton */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.raditi
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark,.container:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+.container2:hover .raditi
+{background-color: #ccc;}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark,.container input:checked ~ .checkmark1 {
+  background-color: #0095ce;
+}
+.container2 input:checked ~ .raditi
+{background-color: #0095ce;}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after, .checkmark1:after, .raditi:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after, .container input:checked ~ .checkmark1:after {
+  display: block;
+}
+.container2 input:checked ~ .raditi:after
+{
+  display: inline-flex;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark1:after, .container2 .raditi:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/*-----boton-----*/
+
+.form-control a
+{
+background-color: #0095ce;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+.etiqueta
+{
+margin-left: 30px;
+}
+.preguntillas
+{
+  margin-top: 10px;
+}
+  /*==================================MEDIA============================*/
+  @media screen and (max-width: 1024px)
+  {
+    form, .cuerpos
+    {
+    width: 80%;
+    }
+    .cabezal
+    {
+      width: 80%;
+    }
+    .texto_intro
+    {
+      width: 80%;
+    }
+
+  }
+  @media screen and (max-width: 768px)
+  {
+    form, .cuerpos
+    {
+    width: 100%;
+    }
+    .cabezal
+    {
+      width: 100%;
+      background-size: cover;
+    }
+    input[type="text"],input[type="email"],input[type="date"]
+      {
+      width: 100%;
+      }
+      .texto_intro
+      {
+        width: 100%;
+      }
+
+
+  }
+  @media screen and (max-width: 425px)
+  {
+    .container2
+    {
+      display: flex;
+      margin-top: 10px;
+    }
+    .preguntillas
+    {
+      margin-top: 25px;
+    }
+    .cuerpos img
+    {
+      width: 90%;
+    }
+  }
